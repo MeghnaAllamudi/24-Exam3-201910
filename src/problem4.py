@@ -2,7 +2,7 @@
 Exam 3, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
+         and Meghna Allamudi.  October, 2018.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
@@ -83,6 +83,14 @@ And this one for n=14:
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
+
+    for k in range(n):
+        for j in range(n-k):
+            print('*',end='')
+        for j in range(k+1):
+            print(n-j,end='')
+        print()
+
 
 
 # ----------------------------------------------------------------------

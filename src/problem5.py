@@ -212,6 +212,18 @@ def problem5(x):
     Type hints:
       :type x:    int
     """
+    n = 0
+    n = n + x
+    while True:
+        if is_prime(n) == True:
+            if is_prime(sum_of_digits(n)) == True:
+                return n
+            else:
+                n = n+1
+        else:
+            n = n + 1
+
+
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).

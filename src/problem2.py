@@ -2,7 +2,7 @@
 Exam 3, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and Meghna Allamudi.  October 2018.
 
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -89,6 +89,13 @@ def problem2(sequence):
     Type hints:
       :type sequence [list]
     """
+    min = 0
+    for k in range(len(sequence)):
+        if sequence[k] < 0:
+            sequence[k] = sequence[k]*(-1)
+        if sequence[k] > sequence[min]:
+            min = k
+    return min
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
